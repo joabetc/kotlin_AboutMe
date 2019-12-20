@@ -51,7 +51,9 @@
                 android:drawableTop="@android:drawable/ic_menu_info_details"
                 android:drawablePadding="16dp"
                 android:lineSpacingMultiplier="1.2"
-                android:text="@string/bio" />
+                android:text="@string/bio"
+                android:textAlignment="center"
+                android:hint="@string/what_is_your_nickname" />
         </LinearLayout>
 
 
