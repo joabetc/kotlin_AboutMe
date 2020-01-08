@@ -13,6 +13,7 @@ import com.joabe.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Joabe Costa")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding.nicknameText.setOnClickListener {
             updateNickName(it)
         }
+
+        binding.myName = myName
     }
 
     private fun addNickname(view: View) {
